@@ -1,0 +1,14 @@
+
+entity Student {
+	firstname String,
+    lastName String
+    school String
+}
+entity Category {
+	language String,
+    question String,
+    answer String
+}
+relationship ManyToMany {
+  Student{category} to Category{student}
+}
